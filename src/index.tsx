@@ -7,7 +7,6 @@ import Inicio  from 'pages/Inicio';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cardapio />
     <Inicio />
   </React.StrictMode>,
   document.getElementById('root')
