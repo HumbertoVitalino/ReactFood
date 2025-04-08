@@ -12,7 +12,7 @@ export default function Menu() {
   }, {
     label: 'Sobre',
     to: '/sobre'
-  }]
+  }];
   return (
     <nav className={styles.menu}>
       <Logo />

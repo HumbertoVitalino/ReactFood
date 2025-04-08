@@ -3,21 +3,25 @@ import Header from 'components/header';
 import Menu from 'components/menu';
 import Cardapio from 'pages/Cardapio';
 import Inicio from 'pages/Inicio';
-import Sobre from 'pages/Sobre'
+import Sobre from 'pages/Sobre';
+import Footer from 'components/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NotFound from 'pages/NotFound';
 
 export default function AppRouter() {
   return (
-    <main>
+    <main className='container'>
       <Router>
         <Menu />
         <Routes>
           <Route path='/' element={<Header />}>
             <Route index element={<Inicio /> } />
             <Route path='cardapio' element={<Cardapio /> } />
-            <Route path='sobre' element={<Sobre />} />
+            <Route path='sobre' element={<Sobre />} />            
           </Route>
+          <Route path='*' element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </main>
   );
