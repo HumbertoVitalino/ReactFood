@@ -9,7 +9,7 @@ export default function TagsPrato({
     price
 }: Prato) {
     return (
-        <div className={styles.tags__tags}>
+        <div className={styles.tags}>
             <div className={classNames({
                 [styles.tags__tipo]: true,
                 [styles[`tags__tipo__${category.label.toLowerCase()}`]]: true
