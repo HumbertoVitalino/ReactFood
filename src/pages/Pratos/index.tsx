@@ -1,6 +1,6 @@
 import styles from './pratos.module.scss';
 import { useParams, useNavigate, Routes, Route } from 'react-router-dom';
-import cardapio from 'data/cardapio.json'
+import cardapio from 'data/cardapio.json';
 import TagsPrato from 'components/tagsprato';
 import NotFound from 'pages/NotFound';
 import Header from 'components/header';
