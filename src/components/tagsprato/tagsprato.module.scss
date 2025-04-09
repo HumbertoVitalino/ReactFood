@@ -1,10 +1,11 @@
-@import 'styles/variaveis';
-@import 'styles/breakpoints';
+@import "styles/variaveis";
+@import "styles/breakpoints";
 
 $massas: #d73b3b;
 $carnes: #30201e;
 $combos: #e6c864;
 $veganos: #80aa40;
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@ $veganos: #80aa40;
   @media (max-width: $mobile) {
     justify-content: flex-start;
   }
-div {
+  > div {
     margin: 10px;
   }
   &__tipo {
